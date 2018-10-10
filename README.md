@@ -6,7 +6,8 @@
 #### 2、如何修改tabbar选中后字体的颜色
     答：app.json中，tabbar选项，添加selectedColor选项
 #### 3、Canvas绘图以及分享截图，正式测试时，图片不显示问题
-    答：需要使用wx.downloadFile()方法将图片缓存到本地
+    答：需要使用wx.downloadFile()方法将图片缓存到本地（如下图）
+![](https://github.com/HappinessLei/applet/blob/master/artical_img/1.jpg)
 #### 4、授权不自动弹出授权窗口问题
     答：新版本不再支持自动弹出授权窗口，需要手动按钮触发，以示友好交互
 #### 5、wx:if使用时，如果内部嵌套了label标签，使用<view wx:else></view>加载时候，将会出现小黑块。
