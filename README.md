@@ -40,3 +40,5 @@
 #### 12、如果需要异步调用wx.showLoading()或隐藏wx.hideLoading()
     答：使用setTimeout()（如下图）
 ![](https://github.com/HappinessLei/applet/blob/master/artical_img/7.jpg)
+    
+##### 注：刚接触小程序必须知道，小程序开发必须使用真实域名，若没有，可使用腾讯云，微信公众平台小程序，设置，开发者工具中可开通腾讯云
