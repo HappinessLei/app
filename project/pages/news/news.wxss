@@ -1,0 +1,96 @@
+/* pages/news/news.wxss */
+swiper {
+  display:block;
+  height:430rpx;
+}
+.wrap{
+  height: auto;
+  position: relative;  
+}
+image {
+  width:100%;
+  height:430rpx;
+  display:block;
+  overflow:hidden;
+}
+.banner-title{
+  font-size:16px;
+  width:100%;
+  display:block;
+  position:absolute;
+  z-index:2;
+  left:0;
+  bottom:0;
+  color:#fff;
+  background:rgba(0,0,0,0.5);
+  height:60rpx;
+  padding-left:20rpx;
+  line-height:60rpx;
+}
+
+ 
+/*用来包裹所有的小圆点  */
+.dots{  
+  height: 24rpx; 
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 0rpx;
+  bottom: 20rpx;
+}  
+/*未选中时的小圆点样式 */
+.dot{  
+  width: 24rpx;  
+  height: 24rpx;   
+  border-radius: 50%;
+  margin-right: 20rpx;
+  background-color: white;
+  text-align: center;
+}  
+/*选中以后的小圆点样式  */
+.active{  
+  width: 24rpx;   
+  height: 24rpx;
+  background-color: coral;
+}
+
+.listView .ul{
+  padding:20rpx;
+}
+.listView .ul .li{
+  padding: 20rpx 0;
+  border-bottom:1rpx solid #eee;
+  color: #555;
+  font-size:14px;
+  text-align: justify;
+  padding-left:40rpx;
+  background: url(https://www.yidaiyilu.gov.cn/images/wap/common.files/li_dot.png) no-repeat left center;
+}
+
+.listBox{
+	background-color: #f7f9fc;
+	margin-bottom: 10rpx;
+}
+.column {
+    height: 80rpx;
+    line-height: 80rpx;
+    padding: 0 30rpx;
+    border-bottom: 1rpx solid #3a67c4;
+}
+.column text {
+    padding: 0 8rpx;
+    border-bottom: 3px solid #3a67c4;
+    height: 80rpx;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 32rpx;
+    color:#3a67c4;
+    font-weight: 600;
+}
+.column .tojump{
+	float: right;
+	text-align: right;
+  height:80rpx;
+  display: flex;
+  align-items: center;
+}

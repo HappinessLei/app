@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "要闻",
+  "usingComponents":{
+    "dialog": "/components/Dialog/dialog"
+  }
+}

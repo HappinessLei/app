@@ -1,0 +1,54 @@
+/* pages/hotspot/hotspot.wxss */
+.hotspot-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20rpx;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+.content {
+  padding: 30rpx 20rpx 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fff;
+  width: 90%;
+  margin: 0 auto 15rpx;
+  border-bottom: 1px solid #999;
+  border-radius: 3px;
+}
+.txtCon{
+  width: 450rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.txtCon text{
+  display: block;
+}
+.hotspot-title {
+  font-size:30rpx;
+  line-height:36rpx;
+}
+
+.hotspot-img {
+  width: 200rpx;
+  height: 180rpx;
+  border-radius: 5rpx;
+}
+.txtBox{
+  width:97%;
+  display:flex;
+  justify-content: space-between;
+}
+.hotspot-comment,.hotspot-time{
+  color: #999;
+  font-size: 24rpx;
+  line-height: 24rpx;
+}

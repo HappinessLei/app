@@ -1,0 +1,43 @@
+/* pages/scroll-view/scroll-view.wxss */
+.section__title{
+  padding:0 0 5px 10px ;
+}
+.scroll-view-item{
+  width: 100%;
+  height: 100px;
+}
+.bc_green{
+  background: #09bb07;
+}
+.bc_red{
+  background: #f76260;
+}
+.bc_yellow{
+  background: #ffbe00;
+}
+.bc_blue{
+  background: #00deff;
+}
+.btn-area{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top:10px;
+}
+.btn-area button{
+  width:90%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.scroll-view_H{
+  height: 100px;
+}
+.scrollBox{
+  height: 100px;
+  width:800px;
+  display: flex;
+}
+.scroll-view-item_H{
+  flex: 1;
+  height:100px;
+}

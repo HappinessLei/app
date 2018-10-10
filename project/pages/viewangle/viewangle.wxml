@@ -1,0 +1,45 @@
+<view class="page-body">
+  <block wx:for="{{videos}}" wx:key="{{item.id}}">
+    <view class="page-section tc">
+      <navigator url="../viewangle/video_detail/video_detail?id={{item.id}}&title={{item.title}}&time={{item.addtime}}&img={{item.img}}&source={{item.origin}}&article={{item.content}}&video={{item.video}}&editor={{item.editor}}">
+        <view class='playBox'>
+          <image src='{{item.img}}'></image>
+          <view class='playBtn'></view>
+        </view>
+      </navigator>
+      <view class="navColumn_box">
+        <view class="navColumn navColumn1">
+          <view class='author'>
+            <image style='width:60rpx; height:60rpx;border-radius:50%;' src='{{item.origin_head_img}}'></image>
+            <text>{{item.origin}}</text>
+          </view>
+          <view class='discussCon'>
+            <image style='width:50rpx;height:50rpx;' src='../../static/images/share/discuss.png'></image>
+            <text>249</text>
+          </view>
+          <view class='shareBtn'>
+            <view class='btnbox'>
+              <image class="shareFriend" id='shareFriend' src='{{item.wechat_img}}'></image>
+              <button id='btn{{item.id}}' open-type='share' bindtap='onShareApp'></button>
+            </view>
+            <image class="shareFriendCircle shareMoments{{item.id}} {{currentTabsIndex==index?'selected':''}}" id='shareFriendCircle' bindtap='downloadHeroImage' style='width:50rpx;height:50rpx;' src='{{item.wechat_moments_img}}' data-index="{{index}}"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+
+  <!-- 分享朋友圈 start -->
+  <canvas canvas-id='imgCanvas' class='imgCanvas' binderror='canvasIdErrorCallback' ></canvas>
+  <view class='shareImg_container' hidden='{{hidden}}'>
+    <view class='wx-mask'></view>
+    <view class='shareImg'>
+        <view class='shareImgSrc'><image src='{{shareImgSrc}}'></image></view>
+        <view class='shareImg-state' hidden='{{hidden}}'>{{ shareState }}</view>
+        <view class='shareImg-footer' hidden='{{hidden}}'>
+          <image src='../../static/images/share/closebtn.png' bindtap='closePopup'></image>
+        </view>
+    </view>
+  </view>
+  <!-- 分享朋友圈 end -->
+</view>

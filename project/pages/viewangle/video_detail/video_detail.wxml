@@ -1,0 +1,16 @@
+<!--pages/viewangle/video_detail/video_detail.wxml-->
+<import src="../../../wxParse/wxParse.wxml" />
+
+<view class="info_box">
+  <view id="info_title">{{title}}</view>
+  <view class="article_con">
+    <view class="article_title">
+      <text id="info_released_dtime">{{time}}</text>
+      <text id="info_source">{{source}}</text> 
+    </view>
+    <view class='article_info' id='article_info'>
+      <video id="myVideo" src="{{video}}" binderror="videoErrorCallback" enable-danmu danmu-btn controls></video>
+      <template is="wxParse" data="{{wxParseData:article.nodes}}"></template>
+    </view>
+  </view>
+</view>

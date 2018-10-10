@@ -1,0 +1,17 @@
+<!--pages/hotspot/hotspot.wxml-->
+<view class="hotspot-container">
+  <block wx:for="{{hotspotInfo}}" wx:for-item="hotspotInfo" wx:key="hotspotnews">
+    <view class="content">
+      <view class="detail-container" data-id="{{hotspotInfo.id}}" data-tmid="{{hotspotInfo.tm_id}}" data-catid="{{hotspotInfo.cat_id}}" data-infoid="{{hotspotInfo.info_id}}" data-link="{{hotspotInfo.jumplink}}" catchtap="onDetailTap">
+        <image class="hotspot-img" src="{{hotspotInfo.img}}" mode="aspectFill"></image>
+        <view class='txtCon'>
+          <text class="hotspot-title">{{hotspotInfo.title}}</text>
+          <view class='txtBox'>
+            <text class="hotspot-comment">{{hotspotInfo.replies}} 评论</text>
+            <text class="hotspot-time">{{hotspotInfo.addtime}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
